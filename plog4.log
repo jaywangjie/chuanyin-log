@@ -1,0 +1,14 @@
+[ERROR] RUNTIME(153383,python3.12):2026-10-30-23:14:29.335.106 [npu_driver_mem.cc:809]153383 HostMemAlloc:Call driver api halMemAlloc failed, drvRetCode=6, size=1073741824(bytes), drvDevId=0, drvFlag=0x700000000901800, moduleId=7.
+[ERROR] RUNTIME(153383,python3.12):2026-10-30-23:14:29.335.745 [api_impl.cc:2350]153383 HostMallocWithCfg:Host memory malloc failed, size=1073741824(bytes), moduleId=7, vaFlag=1.
+[ERROR] RUNTIME(153383,python3.12):2026-10-30-23:14:29.335.766 [api_c_memory.cc:115]153383 rtsMallocHost:ErrCode=207001, desc=[driver error:out of memory], InnerCode=0x7020016
+[ERROR] RUNTIME(153383,python3.12):2026-10-30-23:14:29.335.777 [error_message_manage.cc:69]153383 FuncErrorReason:rtsMallocHost execution failed, reason=driver error:out of memory
+[ERROR] APP(153383,python3.12):2026-10-30-23:14:29.370.609 153383 CachingHostAllocator.cpp:allocate_host_memory_slowpath:252: "[PTA]:allocate_host_memory_slowpath:../torch_npu/csrc/core/npu/CachingHostAllocator.cpp:252 NPU function error: aclrtMallocHostWithCfg, error code is 207001
+[ERROR] 2026-10-30-23:14:29 (PID:153383, Device:0, RankID:24) ERR00100 PTA call acl api failed
+[Error]: Failed to apply for memory.
+        Check the remaining storage space in the hardware environment.
+[PID: 153383] 2026-10-30-23:14:29.273.260 Resource_Error_Insufficient_Host_Memory(EL0018): Failed to allocate 1073741824 bytes host memory requested by the RUNTIME module.
+        Possible Cause: Allocation failed due to insufficient host memory.
+        Solution: Ensure that the required memory is available. Take measures such as stopping unnecessary processes to free memory.
+TraceBack (most recent call last):
+        Failed to allocate memory requested by RUNTIME module.
+        rtsMallocHost execution failed, reason=driver err
