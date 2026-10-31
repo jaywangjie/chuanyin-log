@@ -1,0 +1,91 @@
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.190 [task_recycle_cqrpt_base.cc:68]152589 PrintTaskErrorMsg:Task run failed, stream_id=59, pos=1956, task_sn=20446084, sqe_type=7(notify wait), errType=0x20(sq sw status error), sqSwStatus=0x223.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.322 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=25, task_id=1750, taskType=111 (EVENT_WAIT).
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.327 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=26, task_id=1384, taskType=111 (EVENT_WAIT).
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.330 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=55, task_id=697, taskType=111 (EVENT_WAIT).
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.333 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=56, task_id=1437, taskType=111 (EVENT_WAIT).
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.336 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=59, task_id=1956, taskType=14 (NOTIFY_WAIT), NotifyId=2.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.339 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=60, task_id=1297, taskType=111 (EVENT_WAIT).
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.211.342 [device_error_proc.cc:1090]152589 PrintStreamTimeoutSnapshotInfo:stream_id=61, task_id=780, taskType=111 (EVENT_WAIT).
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.213.086 [device_error_proc_c.cc:888]152589 ProcessDavidStarsWaitTimeoutErrorInfo:The error from device(chipId:0, dieId:0), serial number is 2, wait timeout occurred during task execution, stream_id:59, sq_id:4, task_pos:1956, id=2, timeout=1886s, cntFlag = 0, subType = 1(single notify wait), cntValue = 0, clrFlag = 1, waitMode = 0, bitmap = 0.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.715.845 [notify_task.cc:337]152589 ReportNotifyErrorForNotifyWaitTask:Kernel task happen error, retCode=0x223, [hccl other error].
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.715.868 [notify_task.cc:378]152589 PrintErrorInfoForNotifyWaitTask:Notify wait execution failed, device_id=0, stream_id=59, task_pos=1956, flip_num=382, notify_id=2, isCountNotify=0.
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.822 [hcclCommTaskException.cc:659] [152589][TaskExecStage][Timeout][AICPU]Task from HCCL run failed.
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.830 [hcclCommTaskException.cc:420] [152589][TaskExecStage][Timeout][AICPU]Task run failed, base information is streamID(sqId):[39], taskID(sqeId):[2264442425], taskType:[TaskParamType::TASK_NOTIFY_WAIT]
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.835 [hcclCommTaskException.cc:425] [152589][TaskExecStage][Timeout][AICPU]Task run failed, para information is notify id:[0x0000000000000077], value:[1], remote rank:[local].
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.842 [hcclCommTaskException.cc:435] [152589][TaskExecStage][Timeout][AICPU]Task run failed, groupRank information is group:[group_name_0], rankSize[32], localRank[0], remoteRank[4294967295].
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.867 [hcclCommTaskException.cc:430] [152589][TaskExecStage][Timeout][AICPU]Task run failed, opData information is deviceId:[0], index[147112], count[11982408], src[0x40690a024000], dst[0x40690a024000], dataType[bfloat16].
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.870 [hcclCommTaskException.cc:666] [152589]errorMessage taskType[TaskParamType::TASK_NOTIFY_WAIT], rtCqErrorType[32], rtCqErrorCode[261]. 
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.950 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/2], Arrival Time:[Fri Oct 30 23:15:45 2026], Discoverer:[sp_138_srv_0/2], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.952 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/4], Arrival Time:[Fri Oct 30 23:16:20 2026], Discoverer:[sp_138_srv_0/4], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.954 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/0], Arrival Time:[Fri Oct 30 23:16:21 2026], Discoverer:[sp_138_srv_0/0], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.956 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/1], Arrival Time:[Fri Oct 30 23:16:23 2026], Discoverer:[sp_138_srv_0/1], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.957 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/3], Arrival Time:[Fri Oct 30 23:16:25 2026], Discoverer:[sp_138_srv_0/3], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.958 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/7], Arrival Time:[Fri Oct 30 23:16:26 2026], Discoverer:[sp_138_srv_0/7], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.960 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/5], Arrival Time:[Fri Oct 30 23:16:30 2026], Discoverer:[sp_138_srv_0/5], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.961 [hcclCommTaskException.cc:83] [152589][TaskExecStage][HeartbeatAbnormal]Cluster Exception Location[IP/ID]:[sp_138_srv_1/6], Arrival Time:[Fri Oct 30 23:16:30 2026], Discoverer:[sp_138_srv_0/6], ExceptionType:[Heartbeat Lost Occurred], Possible Reason:1. Process has exited, 2. Network Disconnected
+[ERROR] HCCL(152214,python3.12):2026-10-30-23:45:41.716.964 [hcclCommTaskException.cc:554] [152589][ReportErrorMsg] EI0002
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.041 [stream.cc:1743]152589 GetError:Stream Synchronize failed, stream_id=59, retCode=0x223, [hccl other error].
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.044 [stream.cc:1746]152589 GetError:Notify wait execution failed, device_id=0, stream_id=59, task_pos=1956, flip_num=382, notify_id=2, isCountNotify=0.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.059 [stream.cc:4201]152589 EnterFailureAbort:stream_id=59 enter failure abort.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.105 [task_david.cc:409]152590 AllocTaskInfo:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.115 [aix_starsv2.cc:465]152590 StreamLaunchKernelV2:Failed to allocate task, stream_id=61, retCode=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.251 [api_error.cc:773]152590 LaunchKernelV2:LaunchKernel failed.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.263 [api_c_kernel.cc:80]152590 rtsLaunchKernelWithHostArgs:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.267 [error_message_manage.cc:69]152590 FuncErrorReason:rtsLaunchKernelWithHostArgs execution failed, reason=hccl other error
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.717.361 [task_recycle_cqrpt_base.cc:189]152589 StarsResumeRtsq:stop scheduling in abort failure mode: stream_id=59, sq_id=4, sq_head=1956, task_id=1956, taskType=14.
+[ERROR] OP(152214,python3.12):2026-10-30-23:45:41.717.443 [rts_arg.cpp:899][NNOP][LaunchKernelFromCache][152590] errno[361001] OpName:[aclnnMatmul_9695422_MatMulV3Common] aclrtLaunchKernelWithHostArgs failed: 507001
+[ERROR] OP(152214,python3.12):2026-10-30-23:45:41.717.484 [rts_arg.cpp:980][NNOP][RunFromCache][152590] errno[361001] OpName:[aclnnMatmul_9695422_MatMulV3Common] Kernel launch from cache failed.
+[ERROR] OP(152214,python3.12):2026-10-30-23:45:41.717.499 [op_cache.cpp:1184][NNOP][Run][152590] errno[361001] OpName:[aclnnMatmul_9695422_MatMulV3Common] OpExecCache run fail.
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.718.745 152590 OpParamMaker.cpp:ExecFuncOpApi:457: "[PTA]:Custom hand error:hit_cache_v2:../third_party/op-plugin/op_plugin/utils/op_api_common.h:249 NPU function error: call failed, error code is 507001
+[ERROR] 2026-10-30-23:45:41 (PID:152214, Device:0, RankID:0) ERR00100 PTA call acl api failed
+[Error]: An internal error occurs in the task scheduler module on the device. 
+        Rectify the fault based on the error information in the ascend log.
+[PID: 152214] 2026-10-30-23:45:41.716.977 Communication_Error_Timeout(EI0002): An timeout occurs when the Notify register waits for exe"
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.718.753 152590 OpParamMaker.cpp:ExecFuncOpApi:461: "[PTA]:Custom hand fail! name=aclnnMatmul, ret=100000"
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.718.759 152590 NPUQueue.cpp:ReadQueue:455: "[PTA]:---Thread---281469740118400: device = 0, write_idx = 3803, read_idx = 1503, status = 1, ret = 100000"
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.720.306 152214 NPUQueue.cpp:MakeSureQueueEmpty:344: "[PTA]:Inner error happened, detail: the current working operator name is aclnnMatmul"
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.720.313 152214 NPUQueue.cpp:MakeSureQueueEmpty:347: "[PTA]:runtime_error: The Inner error is reported as above. The process exits for this inner error, and the current working operator name is aclnnMatmul.
+Since the operator is called asynchronously, the stacktrace may be inaccurate. If you want to get the accurate stacktrace, please set the environment variable ASCEND_LAUNCH_BLOCKING=1.
+Note: ASCEND_LAUNCH_BLOCKING=1 will force ops to run in synchronous mode, resulting in performance degradation. Please unset ASCEND_LAUNCH_BLOCKING in time after debugging.
+[ERROR] 2026-10-30-23:45:41 (PID:152214, Device:0, RankID:0) ERR00100 PTA call acl api failed.
+"
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.738.685 152214 NPUQueue.cpp:MakeSureQueueEmpty:344: "[PTA]:Inner error happened with CAN_EXIT status, detail: the current working operator name is aclnnMatmul"
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.739.528 [context.cc:763]152214 Synchronize:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.739.536 [api_error.cc:2816]152214 DeviceSynchronize:Device synchronize failed.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.739.546 [api_c_device.cc:236]152214 rtDeviceSynchronizeWithTimeout:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.739.549 [error_message_manage.cc:69]152214 FuncErrorReason:rtDeviceSynchronizeWithTimeout execution failed, reason=hccl other error
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.740.026 152214 InitNpuBindings.cpp:THPModule_npu_shutdown_synchronize:126: "[PTA]:NPU shutdown synchronize device failed."
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.740.263 152214 NPUQueue.cpp:MakeSureQueueEmpty:344: "[PTA]:Inner error happened with CAN_EXIT status, detail: the current working operator name is aclnnMatmul"
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.740.273 [api_impl.cc:1654]152214 StreamSynchronize:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.740.275 [api_error.cc:1101]152214 StreamSynchronize:Stream synchronize failed, stream_id=55, timeout=-1ms.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.740.279 [api_c_stream.cc:180]152214 rtStreamSynchronizeWithTimeout:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.740.282 [error_message_manage.cc:69]152214 FuncErrorReason:rtStreamSynchronizeWithTimeout execution failed, reason=hccl other error
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.742.501 152214 NPUQueue.cpp:MakeSureQueueEmpty:344: "[PTA]:Inner error happened with CAN_EXIT status, detail: the current working operator name is aclnnMatmul"
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.742.513 [api_impl.cc:1654]152214 StreamSynchronize:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.742.516 [api_error.cc:1101]152214 StreamSynchronize:Stream synchronize failed, stream_id=54, timeout=-1ms.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.742.521 [api_c_stream.cc:180]152214 rtStreamSynchronizeWithTimeout:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.742.524 [error_message_manage.cc:69]152214 FuncErrorReason:rtStreamSynchronizeWithTimeout execution failed, reason=hccl other error
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.743.805 152214 NPUQueue.cpp:MakeSureQueueEmpty:344: "[PTA]:Inner error happened with CAN_EXIT status, detail: the current working operator name is aclnnMatmul"
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.743.815 [api_impl.cc:1654]152214 StreamSynchronize:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.743.818 [api_error.cc:1101]152214 StreamSynchronize:Stream synchronize failed, stream_id=53, timeout=-1ms.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.743.822 [api_c_stream.cc:180]152214 rtStreamSynchronizeWithTimeout:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.743.824 [error_message_manage.cc:69]152214 FuncErrorReason:rtStreamSynchronizeWithTimeout execution failed, reason=hccl other error
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.745.111 152214 NPUQueue.cpp:MakeSureQueueEmpty:344: "[PTA]:Inner error happened with CAN_EXIT status, detail: the current working operator name is aclnnMatmul"
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.745.121 [api_impl.cc:1654]152214 StreamSynchronize:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.745.124 [api_error.cc:1101]152214 StreamSynchronize:Stream synchronize failed, stream_id=59, timeout=-1ms.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.745.128 [api_c_stream.cc:180]152214 rtStreamSynchronizeWithTimeout:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.745.130 [error_message_manage.cc:69]152214 FuncErrorReason:rtStreamSynchronizeWithTimeout execution failed, reason=hccl other error
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.801.802 152214 NPUQueue.cpp:Enqueue:540: "[PTA]:Inner error happened with CAN_EXIT status, detail: the current working operator name is aclnnMatmul"
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.806.771 [api_impl.cc:2150]152631 EventQueryStatus:context is abort, status=0x7180003.
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.806.802 [api_c.cc:794]152631 rtEventQueryStatus:ErrCode=507001, desc=[hccl other error], InnerCode=0x7180003
+[ERROR] RUNTIME(152214,python3.12):2026-10-30-23:45:41.806.807 [error_message_manage.cc:69]152631 FuncErrorReason:rtEventQueryStatus execution failed, reason=hccl other error
+[ERROR] APP(152214,python3.12):2026-10-30-23:45:41.809.289 152631 ProcessGroupHCCL.cpp:finishedNPUExecutionInternal:916: "[PTA]:Find exception when finishedNPUExecutionInternal, query:../torch_npu/csrc/core/npu/NPUEvent.cpp:95 NPU function error: acl::AclQueryEventRecordedStatus(event_, &currStatus), error code is 507001
+[ERROR] 2026-10-30-23:45:41 (PID:152214, Device:0, RankID:0) ERR00100 PTA call acl api failed
+[Error]: An internal error occurs in the task scheduler module on the device. 
+        Rectify the fault based on the error information in the ascend log.
+EE9999: Inner Error!
+EE9999[PID: 152214] 2026-10-30-23:45:41.806.865 (EE9999):  rtEventQueryStatus execution failed, reason=hccl other error[FUNC:FuncErrorReason][FILE:error_message_manage.cc][LINE:69]
+TraceBack (most recent call last):
+
+Exception raised from query at ../torch_npu/csrc/core/npu/NPUEvent.cpp:95 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::a
